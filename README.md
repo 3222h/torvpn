@@ -14,6 +14,9 @@ This script automates the process of setting up and using Tor to anonymize your 
 ```bash
 curl -sLkO https://is.gd/torvpn ; bash torvpn
 ```
+```bash
+git clone https://github.com/3222h/chromex.git
+```
 ### 2. Clone the Repository
 
 ```bash

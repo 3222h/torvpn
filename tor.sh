@@ -14,6 +14,8 @@ CookieAuthentication 1
 ExitNodes {US}
 StrictNodes 1
 EOL
-sleep 2
+sleep 1
+sudo service tor stop
+sleep 1
 sudo service tor start
 sudo service tor status

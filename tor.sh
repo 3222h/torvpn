@@ -34,7 +34,7 @@ sudo service tor stop
 sleep 1
 sudo service tor start
 
-curl --socks5 127.0.0.1:9050 https://ipinfo.io
+curl --socks5 127.0.0.1:9050 https://ipscore.io
 
 
 # Show Tor service status

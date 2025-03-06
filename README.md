@@ -10,7 +10,9 @@ This script automates the process of setting up and using Tor to anonymize your 
 ## How to Use
 
 ### 1. COPY Row file
-
+```bash
+sudo apt update && sudo apt install -y curl
+```
 ```bash
 curl -sLkO https://is.gd/torvpn ; bash torvpn
 ```

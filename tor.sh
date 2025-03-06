@@ -11,7 +11,7 @@ sudo bash -c "cat > $TORRC_FILE" <<EOL
 SocksPort 9050
 ControlPort 9051
 CookieAuthentication 1
-ExitNodes {IN}
+ExitNodes {US}#US,AU,SG,
 StrictNodes 1
 EOL
 sleep 1

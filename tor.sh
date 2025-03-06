@@ -34,11 +34,8 @@ sudo service tor stop
 sleep 1
 sudo service tor start
 
-# Check Tor IP address and country
-TOR_IP=$(curl --socks5 127.0.0.1:9050 -s https://check.torproject.org/api/ip | jq -r .IP)
-TOR_COUNTRY=$(curl -s https://ipinfo.io/$TOR_IP/country)
-echo "Your current Tor IP address is: $TOR_IP"
-echo "Your current Tor IP country is: $TOR_COUNTRY"
+curl --socks5 127.0.0.1:9050 https://ipinfo.io
+
 
 # Show Tor service status
 sudo service tor status

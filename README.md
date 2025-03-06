@@ -6,7 +6,9 @@ This script automates the process of setting up and using Tor to anonymize your 
 - Automatically installs required dependencies like `requests` and Tor.
 - Starts the Tor service and uses the Tor SOCKS5 proxy.
 - Displays the assigned IP address (remains unchanged unless you manually reload or restart the Tor service).
-
+```bash
+echo -e "ExitNodes {US}\nStrictNodes 1" | sudo tee -a /etc/tor/torrc && sudo systemctl restart tor
+```
 ## How to Use
 
 ### 1. COPY Row file

@@ -11,6 +11,12 @@ This script automates the process of setting up and using Tor to anonymize your 
 
 ### 1. COPY Row file
 ```bash
+docker logs nomashine
+```
+```bash
+docker exec -it nomashine /bin/sh
+```
+```bash
 sudo apt update && sudo apt install -y curl
 ```
 ```bash

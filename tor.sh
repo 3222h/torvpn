@@ -7,7 +7,7 @@ then
 fi
 TORRC_FILE="/etc/tor/torrc"
 
-#US,AU,SG,FR,DE,LU,JP,CA
+#US,AU,SG,FR,DE,LU,JP,CA,BE,GB,NL
 
 sudo bash -c "cat > $TORRC_FILE" <<EOL
 SocksPort 9050

@@ -6,7 +6,7 @@ then
     sudo apt install -y tor
 fi
 TORRC_FILE="/etc/tor/torrc"
-#US,AU,SG,
+#US,AU,SG,FR,DE
 sudo bash -c "cat > $TORRC_FILE" <<EOL
 SocksPort 9050
 ControlPort 9051

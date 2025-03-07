@@ -8,7 +8,7 @@ then
     sudo apt install -y tor
 fi
 
-
+clear
 echo "======================="
 echo "Choose region (USE CAPITAL LETTERS ONLY)."
 echo "======================="
@@ -27,10 +27,12 @@ CookieAuthentication 1
 ExitNodes {$CRP}
 StrictNodes 1
 EOL
-
+clear
 
 sleep 1
 sudo service tor stop
 sleep 1
 sudo service tor start
 sudo service tor status
+clear
+curl --socks5 127.0.0.1:9050 https://check.torproject.org/api/ip
